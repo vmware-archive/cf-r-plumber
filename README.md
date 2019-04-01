@@ -1,5 +1,7 @@
 [Plumber API Example](https://www.rplumber.io/), slightly modified to run on Cloud Foundry (CF). 
 
+![](https://github.com/pivotalsoftware/cf-r-plumber/blob/master/Screen%20Shot%202019-04-01%20at%203.48.13%20PM.png)
+
 Note the following important nuances:
 * The host should be set as "0.0.0.0" in the pr$run function in [startscript.R](https://github.com/pivotalsoftware/cf-r-plumber/startscript.R)
 * The port is best set by including PORT <- as.numeric( Sys.getenv('PORT') ) and then supplying PORT as the argument in the pr$run function in [startscript.R](https://github.com/pivotalsoftware/cf-r-plumber/startscript.R)

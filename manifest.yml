@@ -1,6 +1,5 @@
 applications:
  - name: rplumber
-   command: R --no-save < /app/startscript.R
    instances: 1
    memory: 2G
    env:

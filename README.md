@@ -3,15 +3,15 @@
 ![](https://github.com/pivotalsoftware/cf-r-plumber/blob/misc/Screen%20Shot%202019-04-01%20at%203.48.13%20PM.png)
 
 Note the following important nuances:
-* The host should be set as "0.0.0.0" in the pr$run function in [startscript.R](https://github.com/pivotalsoftware/cf-r-plumber/startscript.R)
-* The port is best set by including PORT <- as.numeric( Sys.getenv('PORT') ) and then supplying PORT as the argument in the pr$run function in [startscript.R](https://github.com/pivotalsoftware/cf-r-plumber/startscript.R)
+* The host should be set as "0.0.0.0" in the pr$run function in [startscript.R](https://github.com/pivotalsoftware/cf-r-plumber/blob/master/startscript.R)
+* The port is best set by including PORT <- as.numeric( Sys.getenv('PORT') ) and then supplying PORT as the argument in the pr$run function in [startscript.R](https://github.com/pivotalsoftware/cf-r-plumber/blob/master/startscript.R)
 
 To push this app to your CF environment, run the following command after establishing an API endpoint:
 ```
 cf push rplumber -b https://github.com/cloudfoundry/r-buildpack.git
 ```
 
-To test the API is working try typing the following into a web browser:
+An example API is hosted live on a Cloud Foundry environment (rplumber.apps.pcfdemo.net).  To test the API is working try typing the following into a web browser:
 ```
 http://rplumber.apps.pcfdemo.net/echo?msg=DataScienceonPCF!
 ```

@@ -13,10 +13,10 @@ cf push rplumber -b https://github.com/cloudfoundry/r-buildpack.git
 
 An example API is hosted live on a Cloud Foundry environment [here](https://rplumber.apps.pcfdemo.net).  To test the API is working try typing the following into a web browser:
 ```
-http://rplumber.apps.pcfdemo.net/echo?msg=DataScienceonPCF!
+https://rplumber.apps.pcfone.io/echo?msg=DataScienceonPCF!
 ```
 
 Also try typing the following simple summing function in a terminal window (return sum of 5 and 6):
 ```
-curl --data "a=5&b=6"  rplumber.apps.pcfdemo.net/sum
+curl --data "a=5&b=6"  rplumber.apps.pcfone.io/sum
 ```

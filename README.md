@@ -18,5 +18,5 @@ https://rplumber.apps.pcfone.io/echo?msg=DataScienceonPCF!
 
 Also try typing the following simple summing function in a terminal window (return sum of 5 and 6):
 ```
-curl --data "a=5&b=6"  rplumber.apps.pcfone.io/sum
+curl --data "a=5&b=6" "https://rplumber.apps.pcfone.io/sum"
 ```

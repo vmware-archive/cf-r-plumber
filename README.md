@@ -11,7 +11,7 @@ To push this app to your CF environment, run the following command after establi
 cf push rplumber -b https://github.com/cloudfoundry/r-buildpack.git
 ```
 
-An example API is hosted live on a Cloud Foundry environment [here](https://rplumber.apps.pcfdemo.net).  To test the API is working try typing the following into a web browser:
+An example API is hosted live on a Cloud Foundry environment [here](https://rplumber.apps.pcfone.io/).  To test the API is working try typing the following into a web browser:
 ```
 https://rplumber.apps.pcfone.io/echo?msg=DataScienceonPCF!
 ```
